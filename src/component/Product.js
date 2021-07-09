@@ -2,19 +2,23 @@ import React from 'react';
 import './Product.css';
 import leanstartup from '../Images/leanstartup.jpg';
 
-function Product() {
+function Product({ title, image, price, rating }) {
   return (
     <div className='product'>
       <div className='product__info'>
-        <p>lean startup</p>
+        <p>{title}</p>
         <p className='product__price'>
           <small>$</small>
-          <strong>19.99</strong>
+          <strong>{price}</strong>
         </p>
         <div className='product__rating'>
-          <p>⭐</p>
+          {Array(rating)
+            .fill()
+            .map((_, i) => {
+              return <p key={i}>⭐</p>;
+            })}
         </div>
-        <img className='img' src={leanstartup} alt='' />
+        <img className='img' src={image} alt='' />
         <button>Add to Basket</button>
       </div>
     </div>

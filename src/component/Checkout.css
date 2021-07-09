@@ -1,0 +1,22 @@
+.checkout {
+  display: flex;
+  height: max-content;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.amazongift__img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.chekout__title {
+  margin-right: 10px;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+/* .checkout__right {
+  margin-left: 10px;
+  border-bottom: 1px solid lightgray;
+} */
