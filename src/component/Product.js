@@ -1,6 +1,5 @@
 import React from 'react';
 import './Product.css';
-import leanstartup from '../Images/leanstartup.jpg';
 
 function Product({ title, image, price, rating }) {
   return (
